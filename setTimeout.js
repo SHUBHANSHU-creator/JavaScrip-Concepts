@@ -57,7 +57,7 @@ for(var i = 0; i<5;i++){
 
 //Explaination
 //This happened since the setTimeout calls will go to webapis sections not directly the call stack
-//all the async code waits in this section until the call stack is empty, they wait in the ready queue
+//all the async code waits in this section until the call stack is empty,after they are ready, they wait in the ready queue
 //In the above question the for loop is running and sending setTimeout instances to webapis section
 //after the for loop terminates, the instances come in call stack
 //but since the var value can be overridden in this block hence, at last the value of the var was == 5
