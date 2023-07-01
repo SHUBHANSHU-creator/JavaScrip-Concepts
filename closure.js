@@ -3,14 +3,14 @@
 //   A block is also treated as a scope since ES6. 
 
 
-// function foo() {
-//     let b = 1;
-//     function inner() {
-//         return b++;
-//     }
-//     return inner;
-// }
-// let get_func_inner = foo();
+function foo() {
+    let b = 1;
+    function inner() {
+        return b++;
+    }
+    return inner;
+}
+let get_func_inner = foo();
  
 // console.log(get_func_inner());
 // console.log(get_func_inner());
